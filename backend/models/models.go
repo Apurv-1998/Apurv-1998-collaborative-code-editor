@@ -34,6 +34,7 @@ type Room struct {
 	InviteLimit  int                `bson:"invite_limit" json:"invite_limit"`
 	Participants []string           `bson:"participants" json:"participants"`
 	Status       string             `bson:"status" json:"status"` // open or closed
+	VideoEnabled bool               `bson:"video_enabled" json:"video_enabled"`
 }
 
 // Invitation Model

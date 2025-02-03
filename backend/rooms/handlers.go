@@ -27,7 +27,8 @@ const (
 
 // Create Room Request
 type CreateRoomRequest struct {
-	Name string `json:"name"`
+	Name         string `json:"name"`
+	VideoEnabled bool   `json:"videoEnabled"`
 }
 
 // Create Room
@@ -72,6 +73,7 @@ func CreateRoom(w http.ResponseWriter, r *http.Request) {
 		InviteLimit:  DefaultInviteLimit,
 		Participants: []string{},
 		Status:       "active",
+		VideoEnabled: req.VideoEnabled,
 	}
 
 	roomCollection := auth.GetCollection("rooms")

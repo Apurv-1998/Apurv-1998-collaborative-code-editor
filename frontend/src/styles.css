@@ -39,11 +39,7 @@ body {
     font-size: 1rem;
   }
   
-  .chat-container {
-    border: 1px solid #ccc;
-    padding: 1rem;
-    margin-top: 1rem;
-  }
+
   
   .chat-messages {
     height: 150px;
@@ -52,4 +48,58 @@ body {
     padding: 0.5rem;
     margin-bottom: 0.5rem;
   }
+
+
+  /* Main container for the workspace */
+.workspace-container {
+  display: grid;
+  grid-template-columns: 60% 40%;
+  height: 100vh;
+}
+
+/* Left column: Code editor */
+.editor-left {
+  padding: 1rem;
+  overflow-y: auto;
+  border-right: 1px solid #ccc;
+}
+
+/* Right column: Video and Chat area */
+.editor-right {
+  display: grid;
+  grid-template-rows: 50% 50%;
+  height: 100%;
+}
+
+/* Video container occupies the top half of the right column */
+.video-container {
+  padding: 1rem;
+  border-bottom: 1px solid #ccc;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Chat container occupies the bottom half of the right column */
+.chat-container {
+  padding: 1rem;
+  overflow-y: auto;
+}
+
+/* Toast notification */
+.toast {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #333;
+  color: #fff;
+  padding: 1rem;
+  border-radius: 5px;
+  opacity: 0.9;
+}
+
+/* Optional: styles for SettingsPanel */
+.settings-panel {
+  margin-bottom: 1rem;
+}
   

@@ -12,6 +12,7 @@ const RoomCreation = () => {
   const [showModal, setShowModal] = useState(false);
   const [currentRoomId, setCurrentRoomId] = useState(null);
   const [error, setError] = useState('');
+  const [videoEnabled, setVideoEnabled] = useState(false);
 
   console.log("RoomCreation - user:", user);
 
@@ -63,6 +64,14 @@ const RoomCreation = () => {
           onChange={(e) => setRoomName(e.target.value)}
           required
         />
+        <label>
+          <input
+            type="checkbox"
+            checked={videoEnabled}
+            onChange={(e) => setVideoEnabled(e.target.checked)}
+          />
+          Enable Video Chat
+        </label>
         <button type="submit">Create Room</button>
       </form>
 
