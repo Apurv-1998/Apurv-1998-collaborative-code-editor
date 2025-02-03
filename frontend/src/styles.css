@@ -1,0 +1,55 @@
+/* src/styles.css */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .app-header {
+    background: #282c34;
+    color: white;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .app-header nav a,
+  .app-header nav button {
+    color: white;
+    margin-left: 1rem;
+    text-decoration: none;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .auth-container,
+  .dashboard,
+  .room-creation,
+  .room-join,
+  .editor-container,
+  .chat-container {
+    margin: 2rem;
+  }
+  
+  .code-editor {
+    width: 100%;
+    font-family: monospace;
+    font-size: 1rem;
+  }
+  
+  .chat-container {
+    border: 1px solid #ccc;
+    padding: 1rem;
+    margin-top: 1rem;
+  }
+  
+  .chat-messages {
+    height: 150px;
+    overflow-y: auto;
+    border: 1px solid #ddd;
+    padding: 0.5rem;
+    margin-bottom: 0.5rem;
+  }
+  
