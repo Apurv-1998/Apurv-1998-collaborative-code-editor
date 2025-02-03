@@ -148,7 +148,3 @@ The system comprises several interconnected components:
 **Name:** Apurv Sirohi  
 **Email:** [apurv.sirohi98@gmail.com](mailto:apurv.sirohi98@gmail.com)
 
----
-
-This README provides a complete overview of the project’s architecture, data flow, deployment details, and future enhancements, incorporating all major components and improvements.
-
